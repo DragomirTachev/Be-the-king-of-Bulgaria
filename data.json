@@ -1,0 +1,108 @@
+{
+  "questions":[
+    {
+		"title":"Why is 6 afraid of 7?",
+		"answer":"7-8-9"
+	},
+	{
+		"title":"How much W are 1GW?",
+		"answer":"1000000000"
+	},
+	{
+		"title":"What is the allowed drinking age limit in the USA?",
+		"answer":21
+	},
+	{
+		"title":"How many years was the 100 year war long?",
+		"answer":116
+	},
+	{
+		"title":"Where there is fire, there is ...",
+		"answer":"smoke"
+	},
+	{
+		"title":"Which was the year,in which Simeon destroyed the Turks?",
+		"answer":917
+	},
+	{
+		"title":"What is draculas country, according to the beliefs?",
+		"answer":"Romania"
+	},
+	{
+		"title":"How many words does this sentence have?",
+		"answer":7
+	},
+	{
+		"title":"Which type or assassin was specialized as the anti-samurai",
+		"answer":"ninja"
+	},
+	{
+		"title":"How many letters does the English alphabet contain ?",
+		"answer":"26"
+	},
+	{
+		"title":"How many Capitals has Bulgaria had up to this moment ?",
+		"answer":"4"
+	},
+	{
+		"title":"Which country in the world is well known for it's accurate watches ?",
+		"answer":"Switzerland"
+	},
+	{
+		"title":"Which country were BMW,Mercedess and AUDI manifactured in ?",
+		"answer":"Germany"
+	},
+	{
+		"title":"How many Capitals has Bulgaria had up to this moment ?",
+		"answer":"4"
+	},
+	{
+		"title":"I have a face,no real body, but my hands run wild all the time - what am I ?",
+		"answer":"clock"
+	},
+	{
+		"title":"In which town in Bulgaria is the Panorama centered ?",
+		"answer":"Pleven"
+	},
+	{
+		"title":"Which Bulgarian town is considered the Sea Capital ?",
+		"answer":"Varna"
+	},
+	{
+		"title":"Which Bulgarian town is famous for it's roses ?",
+		"answer":"Kiustendil"
+	},
+	{
+		"title":"During the deffence from the Turks,where has the most famous fight ever in Bulgarian history taken place ?",
+		"answer":"Shipka"
+	},
+	{
+		"title":"How many are the horsemen of the Apocalypse ?",
+		"answer":"4"
+	},
+	{
+		"title":"How many colors does the Bulgarian flag consist of ?",
+		"answer":"3"
+	},
+	{
+		"title":"Which food product is Bulgarian famouse for (Japan is constantly buying it) ?",
+		"answer":"Yogurt"
+	},
+	{
+		"title":"Who was the creator of the first computer ?",
+		"answer":"John Atanasov"
+	},
+	{
+		"title":"Which golden fruit was the goal of the three brothers, in the famous Bulgarian tale ?",
+		"answer":"apple"
+	},
+	{
+		"title":"Which geographic side does the sun rize from ?",
+		"answer":"East"
+	},
+	{
+		"title":"Which is the missing number in the sequense: 2,5,11,?,47 ?",
+		"answer":"23"
+	}
+  ]
+}
