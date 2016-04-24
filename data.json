@@ -6,7 +6,7 @@
 	},
 	{
 		"title":"How much W are 1GW?",
-		"answer":"1000000000"
+		"answer":1000000000
 	},
 	{
 		"title":"What is the allowed drinking age limit in the USA?",
@@ -38,11 +38,11 @@
 	},
 	{
 		"title":"How many letters does the English alphabet contain ?",
-		"answer":"26"
+		"answer":6
 	},
 	{
 		"title":"How many Capitals has Bulgaria had up to this moment ?",
-		"answer":"4"
+		"answer":4
 	},
 	{
 		"title":"Which country in the world is well known for it's accurate watches ?",
@@ -53,8 +53,8 @@
 		"answer":"Germany"
 	},
 	{
-		"title":"How many Capitals has Bulgaria had up to this moment ?",
-		"answer":"4"
+		"title":"Which was the first Bulgarian Capital ?",
+		"answer":"Pliska"
 	},
 	{
 		"title":"I have a face,no real body, but my hands run wild all the time - what am I ?",
@@ -78,11 +78,11 @@
 	},
 	{
 		"title":"How many are the horsemen of the Apocalypse ?",
-		"answer":"4"
+		"answer":4
 	},
 	{
 		"title":"How many colors does the Bulgarian flag consist of ?",
-		"answer":"3"
+		"answer":3
 	},
 	{
 		"title":"Which food product is Bulgarian famouse for (Japan is constantly buying it) ?",
@@ -101,8 +101,24 @@
 		"answer":"East"
 	},
 	{
-		"title":"Which is the missing number in the sequense: 2,5,11,?,47 ?",
-		"answer":"23"
+		"title": "Which is the missing number in the sequense: 2,5,11,?,47 ?",
+		"answer":23
+	},
+	{
+		"title": "Which marvel comic superhero is Stan Lee's favourite and most successful character?",
+		"answer":"Spider-man"
+	},
+	{
+		"title": "Which is the hometown of Emil Dimitrov?",
+		"answer":"Pleven"
+	},
+	{
+		"title": "How many people create a Quartet ?",
+		"answer":4
+	},
+	{
+		"title": "In which year did the Titanic sink ?",
+		"answer":1912
 	}
   ]
 }

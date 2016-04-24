@@ -175,6 +175,11 @@ function checkForEndGame() {
     },2000);
   }
   else {
+
+    if(array_of_questions.length == 0) {
+      alert('NO MORE QUESTIONS!');
+      return;
+    }
     askQuestion();
     ShowSuccessRegionWinMessage();
     setTimeout(function(){ $('#questionnaire').show(200); $('#backgrounder').show(200); $('#answer').focus(); },4000);
@@ -206,6 +211,12 @@ function checkAnswer() {
 }
 
 function askQuestion(){
+
+      if(array_of_questions.length == 0) {
+        alert('NO MORE QUESTIONS!');
+        return;
+      }
+
   $('#answer').val('');
   var index = Math.round(Math.random() * (array_of_questions.length-1));
    currentQuestion = array_of_questions[index];
