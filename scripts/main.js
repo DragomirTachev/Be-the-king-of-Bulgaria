@@ -3,11 +3,17 @@ var group = null;
 var completedRegions = 0;
 var array_of_questions = [];
 var currentQuestion = null;
+var max_sidebar_extention = 0;
 
 $(document).ready(function(){
    svg = d3.select('svg');
    group = svg.append('g');
 
+   max_sidebar_extention = 0.15 * $(window).width();
+
+   $(window).resize(function(){
+     max_sidebar_extention = 0.15 * $(window).width();
+   });
 
    $('body').on('click','#btn-submitter',function(){
        evaluateQuestion();
@@ -19,11 +25,49 @@ $(document).ready(function(){
      }
    });
 
+   $('body').on('click','.highscore',function(){
+      showHighscores();
+   });
+
+   $('body').on('click','#showHS-ingame',function(){
+      showHighscores();
+   });
+
+   $('body').on('keydown',function(ev){
+     if(ev.keyCode == 27) {
+       toggleSideBar();
+     }
+   });
+
    $('body').on('click','.start',function(){
      document.getElementById('startSound').play();
 
-     setTimeout(function(){ $('.menu').fadeOut(4500); },1000)
-     setTimeout(function(){ $('#questionnaire').show(); $('#answer').focus(); },5500)
+     setTimeout(function(){ $('.menu').fadeOut(4500); },1000);
+
+     setTimeout(function(){
+        $('#questionnaire').show();
+        $('#answer').focus();
+        $('#sidebar-menu').fadeIn(1000);
+
+        toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": false,
+        "positionClass": "toast-top-center",
+        "preventDuplicates": true,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "3000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+        }
+        toastr.info('Press "Esc" to enter the Menu');
+     },5500)
    });
 
    extract_qestion_data();
@@ -223,4 +267,31 @@ function askQuestion(){
    currentQuestion = array_of_questions[index];
    array_of_questions.splice(index,1);
    $('#question-title').text(currentQuestion.title);
+}
+
+function showHighscores() {
+  // $('#highscore-data-container')
+  $.get('./highscores.txt',function(data){
+    console.log(data);
+  });
+}
+
+
+function writeToFile(playername, points){
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var fh = fso.OpenTextFile("./highscores.txt", 8, false, 0);
+    fh.WriteLine(playername + ':' + points);
+    fh.Close();
+}
+
+function toggleSideBar() {
+  var item = $('#sidebar-menu');
+  if(item.css('width').toString() == '0px') {
+    item.css('width',parseFloat(max_sidebar_extention) + 'px');
+    item.children().css('display','block');
+  }
+  else {
+    item.children().hide();
+    item.css('width','0px');
+  }
 }

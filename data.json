@@ -85,7 +85,7 @@
 		"answer":3
 	},
 	{
-		"title":"Which food product is Bulgarian famouse for (Japan is constantly buying it) ?",
+		"title":"Which food product is Bulgarian famous for (Japan is constantly buying it) ?",
 		"answer":"Yogurt"
 	},
 	{
@@ -119,6 +119,22 @@
 	{
 		"title": "In which year did the Titanic sink ?",
 		"answer":1912
+	},
+	{
+		"title": "Who was the first woman on Earth,according to the Bible ?",
+		"answer":"Eva"
+	},
+	{
+		"title": "How many meters high is mount Everest ?",
+		"answer":"8848"
+	},
+	{
+		"title": "How many meters high is mount Musala ?",
+		"answer":"2925"
+	},
+	{
+		"title": "How many countries in South America speak Portuguese as their main language ?",
+		"answer":"1"
 	}
   ]
 }
