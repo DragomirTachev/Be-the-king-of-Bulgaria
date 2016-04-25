@@ -8,6 +8,24 @@ $(document).ready(function(){
    svg = d3.select('svg');
    group = svg.append('g');
 
+
+   $('body').on('click','#btn-submitter',function(){
+       evaluateQuestion();
+   });
+
+   $('body').on('keyup','#answer',function(ev){
+     if(ev.keyCode == 13) {
+       $( "#btn-submitter" ).trigger( "click" );
+     }
+   });
+
+   $('body').on('click','.start',function(){
+     document.getElementById('startSound').play();
+
+     setTimeout(function(){ $('.menu').fadeOut(4500); },1000)
+     setTimeout(function(){ $('#questionnaire').show(); $('#answer').focus(); },5500)
+   });
+
    extract_qestion_data();
    initialize_SVG_components();
 });
@@ -81,23 +99,6 @@ function initialize_SVG_components(){
   var Kiustendil = createRegion('M112,285 L106,285 L102,282 L71,282 L60,264 L54,263 L53,258 L51,258 L50,252 L41,252 L41,265 Q48,271 37,278 Q36,287 30,288 L30,297 L37,306 41,306 Q66,322 73,330 Q79,328 82,321 L131,321 L133,318 L132,311 L118,309 L118,305 Q132,291 112,285Z','Kiustendil');
 
 }
-
-$('body').on('click','#btn-submitter',function(){
-    evaluateQuestion();
-});
-
-$('#answer').on('keyup',function(ev){
-  if(ev.keyCode == 13) {
-    $( "#btn-submitter" ).trigger( "click" );
-  }
-})
-
-$('body').on('click','.start',function(){
-  document.getElementById('startSound').play();
-
-  setTimeout(function(){ $('.menu').fadeOut(4500); },1000)
-  setTimeout(function(){ $('#questionnaire').show(); $('#answer').focus(); },5500)
-});
 
 function MakeErrorSound(){
   document.getElementById('errorSound').play();
